@@ -7,6 +7,8 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);
 #define DIGITAL_PIN 2
 
 void setup() {
+  pinMode(DIGITAL_PIN, INPUT);
+
   lcd.init();
   lcd.backlight();
 
